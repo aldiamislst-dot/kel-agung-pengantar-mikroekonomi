@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ciri dan Kebaikan Pasar Persaingan Sempurna</title>
+<style>
+:root{--t:#0E4756;--m:#E6EFF1;--a:#EE9B38;--c:#D96B43;--g:#2A8C7D;--d:#1A2E35;--mu:#4A6268}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:#071e25;overflow:hidden;font-family:Calibri,"Segoe UI",system-ui,sans-serif;color:var(--d)}
+#wrap{position:fixed;inset:0}
+#st{position:absolute;left:50%;top:50%;width:1280px;height:720px;transform-origin:0 0;background:#fff;overflow:hidden;transition:background .6s}
+#st.dk{background:var(--t)}
+#blob{position:absolute;view-transition-name:blob;border-radius:50%;transition:all .8s cubic-bezier(.7,0,.2,1);z-index:0}
+.sl{position:absolute;inset:0;opacity:0;visibility:hidden;z-index:1}
+.sl.on{opacity:1;visibility:visible}
+::view-transition-group(*){animation-duration:.8s;animation-timing-function:cubic-bezier(.7,0,.2,1)}
+::view-transition-group(root){animation-duration:.45s}
+.on .t{view-transition-name:ttl}
+h2{font:700 36px Georgia,serif;color:var(--t);position:absolute;left:64px;top:40px;height:64px;display:flex;align-items:center;white-space:nowrap}
+h3{font-size:23px;color:var(--t);margin-bottom:6px}
+p{font-size:18px;color:var(--mu);line-height:1.35}
+.body{position:absolute;left:64px;right:64px;top:128px;bottom:64px}
+.ft{position:absolute;left:64px;bottom:24px;font-size:14px;color:var(--mu)}.nm{left:auto;right:64px}
+.cd{background:var(--m);border-radius:18px;transition:transform .25s,box-shadow .25s}
+.cd:hover{transform:translateY(-4px);box-shadow:0 12px 28px #0e47562e}
+.dkc{background:var(--t);color:#fff}
+.on .cd,.on .an{animation:up .7s backwards;animation-delay:calc(var(--i,0)*.09s + .3s)}
+@keyframes up{from{opacity:0;transform:translateY(26px) scale(.96)}}
+.rw{display:flex;align-items:center;gap:20px}
+.bd{width:44px;height:44px;border-radius:50%;background:var(--t);color:#fff;font:700 19px Calibri;display:grid;place-items:center;flex:none}
+.bd.a{background:var(--a);color:var(--t)}
+.cols{display:flex;gap:30px;height:100%}.col{flex:1;display:flex;flex-direction:column;gap:12px}
+.m{height:64px;padding:0 18px}.m b{display:block;font-size:20px}.m small{font-size:15px;color:var(--mu)}
+.rows{display:flex;flex-direction:column;gap:14px;height:100%}.rows .cd{flex:1;padding:0 28px}
+.rt{font-size:23px;font-weight:700;color:var(--t)}.rows p{margin-left:auto}
+.rows.k .rt{font-size:21px;font-weight:400;color:var(--d)}
+.sp{display:flex;gap:30px;height:100%}.sp>.dkc{flex:11;padding:44px}
+.st3{flex:9;display:flex;flex-direction:column;gap:20px}.st3 .cd{flex:1;padding:0 36px;display:flex;flex-direction:column;justify-content:center}
+.lb{color:var(--a);font-weight:700;font-size:17px;letter-spacing:.12em;margin-bottom:18px}
+.gr{display:grid;grid-auto-flow:column;grid-template-rows:repeat(3,1fr);grid-template-columns:1fr 1fr;gap:20px;height:100%}
+.gr .cd{padding:0 26px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px;height:100%}
+.two.h{height:410px}
+.two>.cd,.two .cd.f{padding:34px 40px}
+.pc{display:flex;flex-direction:column}.pc .cd{flex:1;padding:18px 24px;min-height:0;display:flex;flex-direction:column}
+.pc svg{flex:1;min-height:0;width:100%}
+.cp{margin-top:14px;font-size:18px;color:var(--d)}
+.th{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;height:410px}.th .cd{padding:30px}
+.ic{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font:700 34px Calibri;color:#fff;margin-bottom:20px}
+.on .ic{animation:bu 1.8s infinite ease-in-out}.ic.u{--y:-7px}.ic.d{--y:7px}.ic.e{--y:0px}
+@keyframes bu{50%{transform:translateY(var(--y))}}
+.bar{margin-top:22px;height:96px;background:var(--t);color:#fff;border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 40px;font-size:22px;font-weight:700;line-height:1.35}
+.two.h .cd h3{font-size:26px;margin-bottom:20px}
+.bl li{list-style:none;position:relative;padding-left:26px;margin-bottom:14px;font-size:20px;line-height:1.35}
+.bl li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;border-radius:50%;background:var(--a)}
+.note{font-style:italic;color:var(--mu);font-size:17px;margin-top:6px}
+.fm{background:#fff;border-radius:14px;height:84px;display:grid;place-items:center;font:700 40px Calibri;color:var(--t);margin:6px 0 22px}
+.two h3{font-size:26px}.dkc h3{color:#fff;font-size:26px;margin-bottom:22px}.dkc p{color:#fff}
+.ay{color:var(--a);font-weight:700;font-size:21px;margin-bottom:4px}.dkc .bt{color:#fff;font-size:20px;margin-bottom:22px;line-height:1.35}
+.ln{stroke-dasharray:700;stroke-dashoffset:700}.on .ln{animation:dr 1.2s .5s forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.on .pu{animation:pu 1.6s 1.5s infinite}@keyframes pu{50%{r:13}}
+.en{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff}
+.en h1{font:700 80px Georgia,serif}.ac{width:90px;height:6px;border-radius:3px;background:var(--a);margin:26px 0}
+.on .ac{animation:wd .9s .5s backwards}@keyframes wd{from{width:0}}
+.rf{position:absolute;left:64px;bottom:30px;font-size:12px;color:#fff;line-height:1.5}
+#pb{position:fixed;top:0;left:0;height:4px;background:var(--a);transition:width .5s;z-index:9}
+#nv{position:fixed;right:14px;bottom:14px;display:flex;gap:10px;z-index:9}
+#nv button{width:44px;height:44px;border-radius:50%;border:0;font-size:24px;background:#ffffff40;color:#fff;backdrop-filter:blur(6px)}
+</style></head><body>
+<div id="wrap"><div id="st"><div id="blob"></div></div></div>
+<div id="pb"></div><div id="nv"><button id="pv">‹</button><button id="nx">›</button></div>
+<script>
+const FT="Ciri dan Kebaikan Pasar Persaingan Sempurna";
+const bd=(n,c='')=>`<div class="bd ${c}">${n}</div>`;
+const T=t=>`<h2 class="t">${t}</h2>`;
+const gc=(n,a,b,i)=>`<div class="cd rw" style="--i:${i}">${bd(n)}<div><h3>${a}</h3><p>${b}</p></div></div>`;
+const mem=[["Najla Qotrunnada","2511102436074"],["Dwi Novia Arwanda","2511102436157"],["Riskayanti","2511102436090"],["St. Aminah Rahmawati","2511102436053"],["Lisa Sevtiana Putri","2511102436108"],["Dewi Trisna","2511102436055"],["Muhammad Agung","2511102436083"],["Aldiami Febisyah Sulsita","2511102436003"],["Afnan Ramadhan","2511102436073"],["Ahmad Raffy","2511102436116"],["Adelia Farhah","2511102436142"]];
+const col=(a,o)=>`<div class="col">${a.map((m,i)=>`<div class="cd rw m" style="--i:${i+o}">${bd(i+o+1)}<div><b>${m[0]}</b><small>NIM ${m[1]}</small></div></div>`).join('')}</div>`;
+const rows=(a,k)=>`<div class="rows ${k||''}">${a.map((r,i)=>`<div class="cd rw" style="--i:${i}">${bd(i+1,k?'':'a')}<span class="rt">${r[0]}</span>${r[1]?`<p>${r[1]}</p>`:''}</div>`).join('')}</div>`;
+const li=a=>`<ul class="bl">${a.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+const ax=`<path d="M50 200V20M50 200H330" stroke="#4A6268" stroke-width="2" fill="none"/><text x="34" y="24" font-weight="700" fill="#4A6268" font-size="15">P</text><text x="338" y="205" font-weight="700" fill="#4A6268" font-size="15">Q</text>`;
+const lb=(x,y,t,c='#1A2E35')=>`<text x="${x}" y="${y}" fill="${c}" font-weight="700" font-size="15">${t}</text>`;
+const g1=`<svg viewBox="0 0 360 220">${ax}<path class="ln" d="M90 170L290 60" stroke="#2A8C7D" stroke-width="4" fill="none"/><path class="ln" d="M90 60L290 170" stroke="#D96B43" stroke-width="4" fill="none"/><path d="M50 115H190V200" stroke="#1A2E35" stroke-dasharray="5 4" fill="none"/><circle class="pu" cx="190" cy="115" r="9" fill="#EE9B38"/>${lb(10,120,'P*')+lb(180,216,'Q*')+lb(204,104,'E')+lb(296,60,'S','#2A8C7D')+lb(296,178,'D','#D96B43')}</svg>`;
+const g2=`<svg viewBox="0 0 360 220">${ax}<path class="ln" d="M50 115H325" stroke="#D96B43" stroke-width="5" fill="none"/>${lb(10,120,'P*')+lb(100,98,'P* = AR = MR = D','#D96B43')}<text x="100" y="146" font-size="13" font-style="italic" fill="#4A6268">Berapa pun jumlah yang dijual,</text><text x="100" y="164" font-size="13" font-style="italic" fill="#4A6268">harga per unit tetap sama</text></svg>`;
+const th=(c,s,cl,a,b,i)=>`<div class="cd" style="--i:${i}"><div class="ic ${cl}" style="background:var(--${c});${c=='a'?'color:var(--t)':''}">${s}</div><h3>${a}</h3><p>${b}</p></div>`;
+const cov=`<svg class="an" style="position:absolute;right:56px;top:130px;width:560px;height:460px" viewBox="0 0 520 440"><path d="M40 400V20M40 400H500" stroke="#8FB0B8" stroke-width="2.5" fill="none"/><text x="14" y="30" fill="#8FB0B8" font-weight="700" font-size="22">P</text><text x="506" y="408" fill="#8FB0B8" font-weight="700" font-size="22">Q</text><path class="ln" d="M90 340L440 90" stroke="#fff" stroke-width="5" fill="none"/><path class="ln" d="M90 90L440 340" stroke="#D96B43" stroke-width="5" fill="none"/><circle class="pu" cx="265" cy="215" r="14" fill="#EE9B38"/><text x="448" y="88" fill="#fff" font-weight="700" font-size="20">Supply</text><text x="448" y="352" fill="#D96B43" font-weight="700" font-size="20">Demand</text></svg>`;
+const S=[
+[1,`<div style="position:absolute;left:72px;top:140px;width:580px"><div class="lb an" style="--i:0">TUGAS KELOMPOK EKONOMI MIKRO</div><h1 class="t" style="font:700 50px/1.2 Georgia,serif">${FT}</h1></div><div class="an" style="--i:3;position:absolute;left:72px;top:500px"><div class="ay">Dosen pengampu</div><div style="font-size:26px">Syayid Al Manar, S.Sos., M.M.</div></div>${cov}`],
+[0,`${T('Anggota Kelompok 1')}<div class="body"><div class="cols">${col(mem.slice(0,5),0)}${col(mem.slice(5),5)}</div></div>`],
+[0,`${T('Materi Pembahasan')}<div class="body">${rows([["Pengertian pasar persaingan sempurna","Definisi dan gambaran umum"],["Ciri utama pasar persaingan sempurna","Syarat terbentuknya pasar"],["Mekanisme pembentukan harga","Permintaan dan penawaran"],["Keunggulan bagi konsumen dan produsen","Manfaat di dua sisi pasar"],["Efisiensi produksi dan alokasi sumber daya","Efisiensi produktif dan alokatif"]])}</div>`],
+[0,`${T('1. Pengertian Pasar Persaingan Sempurna')}<div class="body"><div class="sp"><div class="cd dkc" style="--i:0"><div class="lb">DEFINISI</div><div style="font-size:27px;line-height:1.4;margin-bottom:34px">Pasar persaingan sempurna adalah struktur pasar dengan penjual dan pembeli yang sangat banyak, memperjualbelikan barang yang sama, dan tidak ada satu pelaku pun yang mampu memengaruhi harga.</div><p style="color:#fff;font-size:19px">Model ini bersifat ideal. Di dunia nyata, hanya sebagian pasar yang mendekatinya, misalnya pasar komoditas pertanian.</p></div><div class="st3">${[["Banyak pelaku","Jumlah penjual dan pembeli besar"],["Barang homogen","Produk semua penjual sama"],["Price taker","Harga ditentukan oleh pasar"]].map((x,i)=>`<div class="cd" style="--i:${i+1}"><h3 style="font-size:26px">${x[0]}</h3><p>${x[1]}</p></div>`).join('')}</div></div></div>`],
+[0,`${T('2. Ciri Utama Pasar Persaingan Sempurna')}<div class="body"><div class="gr">${[["Penjual dan pembeli sangat banyak","Tiap pelaku terlalu kecil untuk memengaruhi harga pasar."],["Barang homogen","Produk semua penjual sama, sehingga mudah saling menggantikan."],["Pelaku sebagai price taker","Harga ditentukan pasar; pelaku hanya menerima harga tersebut."],["Bebas keluar-masuk pasar","Tidak ada hambatan seperti paten, izin khusus, atau modal besar."],["Informasi sempurna","Penjual dan pembeli tahu harga, kualitas, dan biaya dengan jelas."],["Mobilitas faktor produksi","Tenaga kerja dan modal bebas berpindah antarusaha dan industri."]].map((x,i)=>gc(i+1,x[0],x[1],i)).join('')}</div></div>`],
+[0,`${T('3. Mekanisme Pembentukan Harga')}<div class="body"><div class="two"><div class="pc"><div class="cd" style="--i:0"><h3 style="font-size:19px">Pasar: seluruh penjual dan pembeli</h3>${g1}</div><div class="cp an" style="--i:2">Harga keseimbangan (P*) dan jumlah keseimbangan (Q*) terbentuk dari pertemuan permintaan (D) dan penawaran (S).</div></div><div class="pc"><div class="cd" style="--i:1"><h3 style="font-size:19px">Satu perusahaan</h3>${g2}</div><div class="cp an" style="--i:3">Perusahaan hanya menerima P*, lalu menentukan jumlah produksi pada titik MC = MR.</div></div></div></div>`],
+[0,`${T('Harga Bergerak Menuju Keseimbangan')}<div class="body"><div class="th">${th('c','↓','d','Harga di atas P*','Penawaran lebih besar dari permintaan (surplus). Penjual menurunkan harga agar barang laku, sehingga harga turun ke P*.',0)+th('a','=','e','Harga sama dengan P*','Jumlah yang diminta sama dengan jumlah yang ditawarkan. Tidak ada tekanan naik atau turun, sehingga harga bertahan.',1)+th('g','↑','u','Harga di bawah P*','Permintaan lebih besar dari penawaran (kekurangan). Pembeli berebut barang, sehingga harga naik ke P*.',2)}</div><div class="bar an" style="--i:4">Karena itu, setiap produsen cukup menerima harga pasar dan menentukan jumlah produksinya.</div></div>`],
+[0,`${T('4. Keunggulan dari sisi Konsumen dan Produsen')}<div class="body"><div class="two" style="height:100%"><div class="cd f" style="--i:0"><h3>Bagi konsumen</h3>${li(["Harga rendah dan wajar, mendekati biaya produksi (P = MC).","Banyak penjual, sehingga mudah memilih dan berpindah.","Harga dan mutu mudah dibandingkan karena informasi terbuka.","Tidak ikut menanggung biaya iklan dan promosi mahal."])}</div><div class="cd f" style="--i:1"><h3>Bagi produsen</h3>${li(["Barang pasti laku selama dijual dengan harga pasar.","Mudah masuk pasar karena tanpa hambatan modal, izin, atau paten.","Hampir tanpa biaya promosi dan persaingan merek.","Terdorong berhemat dan memakai teknologi produksi baru."])}<div class="note">Catatan: dalam jangka panjang, produsen hanya memperoleh laba normal.</div></div></div></div>`],
+[0,`${T('5. Efisiensi Produksi dan Alokasi Sumber Daya')}<div class="body"><div class="two h"><div class="cd f" style="--i:0"><h3>Efisiensi produksi</h3><div class="fm">P = ATC minimum</div><p style="color:var(--d);font-size:19px">Dalam jangka panjang, setiap produsen berproduksi pada biaya rata-rata terendah, sehingga sumber daya tidak terbuang.</p></div><div class="cd f" style="--i:1"><h3>Efisiensi alokasi sumber daya</h3><div class="fm">P = MC</div><p style="color:var(--d);font-size:19px">Harga sama dengan biaya tambahan untuk membuat satu unit. Barang yang dibuat sesuai kebutuhan masyarakat, tidak berlebih dan tidak kurang.</p></div></div><div class="bar an" style="--i:3">Keduanya tercapai bersamaan, sehingga surplus konsumen dan produsen maksimal dan kerugian sosial (deadweight loss) nol.</div></div>`],
+[0,`${T('Contoh di Dunia Nyata dan Keterbatasan')}<div class="body"><div class="two" style="height:100%"><div class="cd dkc f" style="--i:0"><h3>Yang mendekati di dunia nyata</h3><div class="ay">Komoditas pertanian</div><div class="bt">Beras, cabai, dan bawang dijual banyak pedagang dengan mutu relatif sama.</div><div class="ay">Valuta asing</div><div class="bt">Pelaku sangat banyak dan informasi kurs terbuka.</div><div class="bt" style="font-style:italic;font-size:18px">Keduanya hanya mendekati; pasar yang sempurna sepenuhnya hampir tidak ada.</div></div><div class="cd f" style="--i:1"><h3>Keterbatasan model</h3>${li(["Barang sering berbeda merek, kemasan, atau kualitas.","Ada hambatan masuk, seperti modal besar dan izin usaha.","Informasi tidak selalu sama bagi semua pelaku.","Laba normal membatasi dana untuk riset dan inovasi besar."])}</div></div></div>`],
+[0,`${T('Kesimpulan')}<div class="body">${rows([["Pasar persaingan sempurna ditandai penjual dan pembeli yang banyak, barang homogen, bebas keluar-masuk, dan informasi sempurna."],["Harga terbentuk dari permintaan dan penawaran pasar; produsen hanya menjadi price taker."],["Konsumen dan produsen sama-sama diuntungkan: harga wajar, barang pasti laku, dan kesempatan berusaha yang setara."],["Pasar ini efisien dalam produksi dan alokasi sumber daya, tetapi jarang ada secara nyata, sehingga dipakai sebagai tolok ukur."]],'k')}</div>`],
+[1,`<div class="en"><h1 class="t">Terima Kasih</h1><div class="ac"></div><div class="an" style="--i:2;font-size:26px">Silakan ajukan pertanyaan atau tanggapan.</div></div><div class="rf an" style="--i:4"><b>REFERENSI</b><br>Mankiw, N. G. Principles of Economics. Cengage Learning.<br>Sukirno, S. Mikroekonomi: Teori Pengantar. Jakarta: Rajawali Pers.</div>`]
+];
+const B=[[700,60,560,.18,'a'],[1130,-60,200,.25,'a'],[-70,570,230,.14,'t'],[1080,560,240,.2,'a'],[-140,-140,250,.14,'t'],[1150,-70,230,.2,'c'],[-80,600,220,.16,'a'],[1120,570,260,.14,'t'],[-70,-90,200,.2,'a'],[1130,600,230,.16,'c'],[-80,-100,240,.14,'t'],[440,150,400,.16,'a']];
+const st=document.getElementById('st'),blob=document.getElementById('blob'),pb=document.getElementById('pb');
+S.forEach((s,k)=>{const e=document.createElement('section');e.className='sl';
+e.innerHTML=s[1]+(k>0&&k<11?`<div class="ft">${FT}</div>${k>1?`<div class="ft nm">${k+1}</div>`:''}`:'');st.appendChild(e)});
+const sl=[...st.querySelectorAll('.sl')];let i=0;
+function render(){sl.forEach((e,k)=>e.classList.toggle('on',k==i));st.classList.toggle('dk',!!S[i][0]);
+const [x,y,z,o,c]=B[i];Object.assign(blob.style,{left:x+'px',top:y+'px',width:z+'px',height:z+'px',opacity:o,background:`var(--${c})`});
+pb.style.width=((i+1)/S.length*100)+'%'}
+function go(n){n=Math.max(0,Math.min(S.length-1,n));if(n==i)return;const f=()=>{i=n;render()};
+document.startViewTransition?document.startViewTransition(f):f()}
+function fit(){const k=Math.min(innerWidth/1280,innerHeight/720);st.style.transform=`translate(${-640*k}px,${-360*k}px) scale(${k})`}
+addEventListener('resize',fit);fit();render();
+pv.onclick=()=>go(i-1);nx.onclick=()=>go(i+1);
+addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key))go(i+1);if(['ArrowLeft','PageUp'].includes(e.key))go(i-1)});
+let x0;addEventListener('touchstart',e=>x0=e.touches[0].clientX);
+addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(i+(d<0?1:-1))});
+</script></body></html>
